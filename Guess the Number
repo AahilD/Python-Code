@@ -1,0 +1,41 @@
+player = input("Enter Name: ")
+print("Hello " + player)
+
+import random
+x = random.randint(1,100)
+
+
+user_number = input("Guess a number between 1 and 100: ")
+user_number = int(user_number)
+
+if user_number == x:
+    print("Good job! You guessed correct. The number was ", + x)
+
+
+while user_number != x:
+
+    user_number = int(user_number)
+
+    if user_number > x:
+        print("Your number is too high")
+        user_number = input("Guess again: ")
+        user_number = int(user_number)
+
+    if user_number < x:
+        print("Your number is too low")
+        user_number = input("Guess again: ")
+        user_number = int(user_number)
+
+    if user_number == x:
+        print("Good job! You guessed correct. The number was ",+ x)
+
+        break
+
+
+
+
+
+
+
+
+
